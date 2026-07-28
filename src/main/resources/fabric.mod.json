@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fakefps",
+  "version": "${version}",
+
+  "name": "Fake FPS",
+  "description": "A mod that fakes FPS values in Minecraft",
+  "authors": [
+    "YourName"
+  ],
+  "contact": {
+    "sources": "https://github.com/YourName/fakefps"
+  },
+
+  "license": "MIT",
+  "icon": "assets/fakefps/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.fakefps.FakeFPSMod"
+    ],
+    "client": [
+      "com.example.fakefps.FakeFPSClient"
+    ]
+  },
+
+  "mixins": [
+    "fakefps.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,16 @@
+base { archivesName = 'fakefps-agent' }
+
+repositories { mavenCentral() }
+
+dependencies {
+    compileOnly 'org.ow2.asm:asm:9.7'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Premain-Class': 'com.example.fakefps.agent.FakeFPSAgent',
+            'Can-Retransform-Classes': 'true'
+        )
+    }
+}

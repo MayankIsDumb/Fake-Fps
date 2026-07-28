@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.fabricmc.net/' }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'fakefps'
+
+include 'common'
+include 'v1_21_11'
+include 'v26_1'
+include 'v26_1_1'
+include 'v26_1_2'
+include 'v26_2'
+include 'fakefps-agent'

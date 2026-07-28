@@ -1,0 +1,23 @@
+version = rootProject.properties['mod_version'] ?: '1.0.0'
+group = rootProject.properties['maven_group'] ?: 'com.example'
+
+subprojects {
+    apply plugin: 'java-library'
+
+    version = rootProject.version
+    group = rootProject.group
+
+    repositories {
+        mavenCentral()
+        maven { url 'https://maven.fabricmc.net/' }
+    }
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        it.options.release = 21
+    }
+}

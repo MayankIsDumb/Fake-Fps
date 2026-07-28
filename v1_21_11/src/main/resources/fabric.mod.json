@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fakefps",
+  "version": "${version}",
+
+  "name": "Fake Fps +",
+  "description": "Fake your FPS with ease — static or random values, configurable in-game. Works with Sodium and any FPS counter mod.",
+  "authors": [
+    "Mayank"
+  ],
+  "contact": {
+    "homepage": "https://afkzdigitals.in"
+  },
+
+  "license": "MIT",
+  "icon": "assets/fakefps/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.fakefps.FakeFPSMod"
+    ],
+    "client": [
+      "com.example.fakefps.FakeFPSClient"
+    ]
+  },
+
+  "mixins": [
+    "fakefps.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
