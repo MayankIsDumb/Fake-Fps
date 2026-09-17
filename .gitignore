@@ -1,7 +1,6 @@
 # Gradle
 .gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar
 
 # IDE
 .idea/
@@ -25,6 +24,8 @@ fakefps-agent/build/
 
 # Mod JARs (release artifacts are in build/libs)
 *.jar
+# ...but keep the Gradle wrapper launcher (required to run ./gradlew)
+!gradle/wrapper/gradle-wrapper.jar
 
 # Config overrides
 local.properties

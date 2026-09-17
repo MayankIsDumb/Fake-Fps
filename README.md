@@ -13,6 +13,7 @@ Fake your FPS with ease — static or random values, configurable in-game. Works
 | 26.1.1 | `v26_1_1/build/libs/fakefps-26.1.1-1.0.0.jar` |
 | 26.1.2 | `v26_1_2/build/libs/fakefps-26.1.2-1.0.0.jar` |
 | 26.2 | `v26_2/build/libs/fakefps-26.2-1.0.0.jar` |
+| 26.3 | `v26_3/build/libs/fakefps-26.3-1.0.0.jar` |
 
 ## Features
 
